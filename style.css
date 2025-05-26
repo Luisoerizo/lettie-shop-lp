@@ -1,0 +1,248 @@
+/* Custom styles for pastel rose-red and fonts */
+:root {
+    --primary-pink: #f5b5c1; /* New primary color */
+    --primary-pink-darker: #e0a0af; /* Slightly darker for hover */
+    --light-gray: #f0f0f0;
+    --dark-gray: #333;
+    --text-color: #4A4A4A; /* Slightly darker text for better readability */
+    --secondary-pink: #ffe0e6; /* A very light pink for backgrounds */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: #ffffff; /* White background */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--dark-gray);
+}
+.bg-primary-pink {
+    background-color: var(--primary-pink);
+}
+.text-primary-pink {
+    color: var(--primary-pink);
+}
+.border-primary-pink {
+    border-color: var(--primary-pink);
+}
+.hover\:bg-primary-pink-darker:hover {
+    background-color: var(--primary-pink-darker);
+}
+.bg-secondary-pink {
+    background-color: var(--secondary-pink);
+}
+
+/* Custom shadow for cards */
+.card-shadow {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+/* Delay animation for staggered effect */
+.animate-fade-in-1 { animation-delay: 0.1s; }
+.animate-fade-in-2 { animation-delay: 0.2s; }
+.animate-fade-in-3 { animation-delay: 0.3s; }
+.animate-fade-in-4 { animation-delay: 0.4s; }
+.animate-fade-in-5 { animation-delay: 0.5s; }
+.animate-fade-in-6 { animation-delay: 0.6s; }
+.animate-fade-in-7 { animation-delay: 0.7s; }
+
+/* Responsive Google Maps iframe */
+.map-container {
+    position: relative;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Custom styles for social buttons */
+.social-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.social-button:hover {
+    transform: translateY(-5px);
+}
+.social-button.instagram:hover { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+.social-button.facebook:hover { background-color: #3b5998; }
+.social-button.whatsapp:hover { background-color: #25D366; }
+
+/* Hero section background image */
+.hero-background {
+    background-image: url('https://placehold.co/1200x800/f5b5c1/ffffff?text=Estilo+Unico'); /* Placeholder image with new color */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Product Grid/Carousel responsive styling */
+.product-grid-or-carousel {
+    /* Mobile (default) - Horizontal Carousel */
+    display: grid;
+    grid-auto-flow: column; /* Items flow horizontally */
+    grid-auto-columns: 80%; /* Each item takes 80% width */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to items */
+    -webkit-overflow-scrolling: touch;
+    gap: 1.5rem; /* Equivalent to gap-6 */
+    padding-bottom: 1rem; /* Space for scrollbar if needed */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+    padding-left: 1rem; /* Add padding to the left for better visual on mobile */
+    padding-right: 1rem; /* Add padding to the right */
+}
+.product-grid-or-carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+}
+.product-grid-or-carousel > div { /* Target direct children (product cards) */
+    flex-shrink: 0;
+    width: 100%; /* Take full width of its grid-auto-columns */
+    max-width: 400px; /* Max width for individual cards */
+    scroll-snap-align: start;
+}
+
+@media (min-width: 768px) { /* md breakpoint and up - Responsive Grid */
+    .product-grid-or-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on md */
+        grid-auto-flow: row; /* Items flow vertically */
+        overflow-x: visible; /* Disable horizontal scroll */
+        scroll-snap-type: none; /* Disable snap */
+        padding-left: 0; /* Remove mobile padding */
+        padding-right: 0;
+        justify-content: center; /* Center the grid */
+        gap: 2rem; /* Adjust gap for desktop grid */
+    }
+    .product-grid-or-carousel > div {
+        width: auto; /* Let grid handle width */
+        max-width: none; /* Remove max-width constraint */
+        scroll-snap-align: none;
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .product-grid-or-carousel {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on lg */
+    }
+}
+
+@media (min-width: 1280px) { /* xl breakpoint */
+    .product-grid-or-carousel {
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns on xl */
+    }
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+.whatsapp-fab:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Menu specific styles */
+#mobile-menu {
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: transform 0.3s ease-in-out;
+}
+#mobile-menu.is-open {
+    transform: translateX(0); /* Slide in */
+}
+/* Ensure the mobile menu button is always on top of the menu when open */
+#mobile-menu-button {
+    z-index: 1001; /* Higher than mobile-menu */
+}
+#close-mobile-menu {
+    z-index: 1002; /* Even higher */
+}
+
+/* Grid for Testimonials */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+@media (min-width: 640px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Grid for Delivery Points */
+.delivery-point-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+@media (min-width: 640px) {
+    .delivery-point-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1024px) {
+    .delivery-point-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Grid for Social Media Icons */
+.social-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem; /* gap-6 */
+    justify-items: center;
+}
+@media (min-width: 640px) {
+    .social-icons-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on small screens */
+    }
+}
+@media (min-width: 768px) {
+    .social-icons-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Still 3 columns on medium screens */
+    }
+}
+@media (min-width: 1024px) {
+    .social-icons-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Still 3 columns on large screens */
+    }
+}

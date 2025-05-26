@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettie Shop - Moda para la Mujer Moderna</title>
+
+    <meta name="description" content="Lettie Shop - Ropa para mujer sexy, formal y casual. Visítanos en Zacatepec, Morelos.">
+    <meta name="keywords" content="moda mujer, Lettie Shop, tienda ropa Zacatepec, ropa casual sexy formal">
+    <meta name="author" content="Lettie Shop">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-sm py-4 px-6 fixed top-0 left-0 w-full z-50 rounded-b-xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl md:text-3xl font-bold text-primary-pink">
+                Lettie Shop
+                <span class="block text-sm text-gray-500 font-normal mt-1">Tu estilo, tu esencia.</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#hero" class="text-gray-600 hover:text-primary-pink transition duration-300">Inicio</a>
+                <a href="#vestidos-noche" class="text-gray-600 hover:text-primary-pink transition duration-300">Productos</a>
+                <a href="#dinamica" class="text-gray-600 hover:text-primary-pink transition duration-300">Dinámica</a>
+                <a href="#testimonios" class="text-gray-600 hover:text-primary-pink transition duration-300">Recomendaciones</a>
+                <a href="#puntos-entrega" class="text-gray-600 hover:text-primary-pink transition duration-300">Puntos de Entrega</a>
+                <a href="#envios" class="text-gray-600 hover:text-primary-pink transition duration-300">Envíos</a>
+                <a href="#ubicacion" class="text-gray-600 hover:text-primary-pink transition duration-300">Ubicación</a>
+                <a href="#redes" class="text-gray-600 hover:text-primary-pink transition duration-300">Redes</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-primary-pink focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="fixed top-0 right-0 w-full h-full bg-white z-40 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-end p-6">
+            <button id="close-mobile-menu" class="text-gray-600 hover:text-primary-pink focus:outline-none">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col items-center space-y-6 text-xl pt-10">
+            <a href="#hero" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Inicio</a>
+            <a href="#vestidos-noche" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Productos</a>
+            <a href="#dinamica" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Dinámica</a>
+            <a href="#testimonios" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Recomendaciones</a>
+            <a href="#puntos-entrega" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Puntos de Entrega</a>
+            <a href="#envios" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Envíos</a>
+            <a href="#ubicacion" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Ubicación</a>
+            <a href="#redes" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Redes</a>
+        </nav>
+    </div>
+
+    <section id="hero" class="hero-background relative h-screen flex items-center justify-center text-center px-4 pt-20 md:pt-0 rounded-b-3xl overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div> 
+        <div class="relative z-10 text-white animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 drop-shadow-lg">
+                Descubre tu estilo en Lettie Shop
+            </h1>
+            <p class="text-lg md:text-xl mb-8 drop-shadow-md">
+                Donde la elegancia se encuentra con la moda.
+            </p>
+            <a href="#ubicacion" class="inline-block bg-primary-pink text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-primary-pink-darker transition duration-300 transform hover:scale-105">
+                ¡Visítanos y luce espectacular hoy mismo!
+            </a>
+        </div>
+    </section>
+
+    <section id="vestidos-noche" class="py-16 bg-light-gray px-4 rounded-t-3xl">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Vestidos de Noche</h2>
+            <div class="product-grid-or-carousel">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Vestido+Largo" alt="Vestido Largo Elegante" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Vestido de Gala</h3>
+                        <p class="text-gray-600 text-sm">Perfecto para eventos especiales.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Vestido+Coctel" alt="Vestido de Coctel" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Vestido de Cóctel</h3>
+                        <p class="text-gray-600 text-sm">Elegancia para tus reuniones.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Vestido+Corto" alt="Vestido Corto de Noche" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Vestido Corto</h3>
+                        <p class="text-gray-600 text-sm">Moderno y sofisticado.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-5">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Vestido+Asimetrico" alt="Vestido Asimétrico" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Vestido Asimétrico</h3>
+                        <p class="text-gray-600 text-sm">Diseño único y vanguardista.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conjuntos-casuales" class="py-16 bg-white px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Conjuntos Casuales</h2>
+            <div class="product-grid-or-carousel">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Conjunto+Comodo" alt="Conjunto Cómodo Casual" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Conjunto de Verano</h3>
+                        <p class="text-gray-600 text-sm">Frescura y estilo para el día a día.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Conjunto+Deportivo" alt="Conjunto Deportivo Casual" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Conjunto Deportivo</h3>
+                        <p class="text-gray-600 text-sm">Para tus actividades y relax.</p>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Conjunto+Lino" alt="Conjunto de Lino" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Conjunto de Lino</h3>
+                        <p class="text-gray-600 text-sm">Ligero y elegante para el calor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lenceria-exclusiva" class="py-16 bg-light-gray px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Lencería Exclusiva</h2>
+            <div class="product-grid-or-carousel">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Lenceria+Sexy" alt="Lencería Sexy" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Conjuntos Sensuales</h3>
+                        <p class="text-gray-600 text-sm">Diseños que realzan tu figura.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Lenceria+Comoda" alt="Lencería Cómoda" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Lencería de Encaje</h3>
+                        <p class="text-gray-600 text-sm">Comodidad y elegancia.</p>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Lenceria+Seda" alt="Lencería de Seda" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Lencería de Seda</h3>
+                        <p class="text-gray-600 text-sm">Suavidad y lujo para tu piel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accesorios" class="py-16 bg-white px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Accesorios</h2>
+            <div class="product-grid-or-carousel">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Bolsos" alt="Bolsos de Moda" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Bolsos</h3>
+                        <p class="text-gray-600 text-sm">El complemento perfecto.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Joyeria" alt="Joyería Fina" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Joyería</h3>
+                        <p class="text-gray-600 text-sm">Detalles que marcan la diferencia.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Cinturones" alt="Cinturones de Moda" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Cinturones</h3>
+                        <p class="text-gray-600 text-sm">Para definir tu silueta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ropa-formal" class="py-16 bg-light-gray px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Ropa Formal</h2>
+            <div class="product-grid-or-carousel">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Trajes" alt="Trajes Formales" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Trajes Sastre</h3>
+                        <p class="text-gray-600 text-sm">Para un look profesional y elegante.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Blusas+Formales" alt="Blusas Formales" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Blusas Elegantes</h3>
+                        <p class="text-gray-600 text-sm">Versatilidad para cualquier ocasión.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
+                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Pantalones+Formales" alt="Pantalones Formales" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Pantalones Formales</h3>
+                        <p class="text-gray-600 text-sm">Combinación perfecta para tus blusas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dinamica" class="py-16 px-4 bg-white">
+        <div class="container mx-auto text-center animate-fade-in-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink">Dinámica de Compra</h2>
+            <div class="max-w-3xl mx-auto text-left space-y-6">
+                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-hand-pointer mr-3 text-2xl"></i>Primer "YO"</h3>
+                    <p class="text-gray-700">Se respetará el primer "YO" (Yo lo quiero / mío / etc.) en los comentarios o mensajes para apartar la prenda.</p>
+                </div>
+                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-calendar-alt mr-3 text-2xl"></i>Recogida y Apartados</h3>
+                    <p class="text-gray-700 mb-2">Si no se recoge en el horario ya establecido (SÁBADOS), se te proporcionará un número de cuenta para depósito/transferencia y así apartar la prenda por más tiempo y/o recoger entre semana.</p>
+                    <p class="text-gray-700">El tiempo máximo para recoger apartados es de **20 días hábiles**, de lo contrario no nos hacemos responsables de daños o pérdidas.</p>
+                </div>
+                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-percent mr-3 text-2xl"></i>Sistema de Apartado</h3>
+                    <p class="text-gray-700">Contamos con **SISTEMA DE APARTADO**: apartas con el **30%**, líquidas en **15 días** y tendrás **30 días para recoger**.</p>
+                </div>
+                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                    <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-question-circle mr-3 text-2xl"></i>Puntos de Entrega y Envíos</h3>
+                    <p class="text-gray-700">Pregunta por nuestros puntos de entrega y opciones de envío para coordinar la mejor opción para ti.</p>
+                </div>
+            </div>
+            <p class="text-md mt-8 text-gray-600 max-w-2xl mx-auto">
+                <i class="fas fa-info-circle text-primary-pink mr-2"></i>
+                Para cualquier duda sobre la dinámica, contáctanos por nuestras redes sociales.
+            </p>
+        </div>
+    </section>
+
+    <section id="testimonios" class="py-16 bg-primary-pink px-4 rounded-t-3xl">
+        <div class="container mx-auto text-center animate-fade-in-7">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-white">Recomendaciones de nuestras clientas</h2>
+            <div class="testimonial-grid">
+                <div class="bg-white p-4 rounded-xl shadow-lg card-shadow transition duration-300 hover:scale-105 w-full max-w-sm">
+                    <img src="https://placehold.co/400x300/f5b5c1/ffffff?text=Testimonio+1" alt="Testimonio de clienta 1" class="w-full h-auto rounded-lg" loading="lazy">
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg card-shadow transition duration-300 hover:scale-105 w-full max-w-sm">
+                    <img src="https://placehold.co/400x300/f5b5c1/ffffff?text=Testimonio+2" alt="Testimonio de clienta 2" class="w-full h-auto rounded-lg" loading="lazy">
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-lg card-shadow transition duration-300 hover:scale-105 w-full max-w-sm">
+                    <img src="https://placehold.co/400x300/f5b5c1/ffffff?text=Testimonio+3" alt="Testimonio de clienta 3" class="w-full h-auto rounded-lg" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="puntos-entrega" class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink animate-fade-in-1">Nuestros Puntos de Entrega</h2>
+            <p class="text-lg md:text-xl mb-12 text-gray-700 animate-fade-in-2">
+                Encuentra el punto de entrega más conveniente para ti.
+            </p>
+            <div class="delivery-point-grid">
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-3 w-full max-w-sm">
+                    <h3 class="font-bold text-2xl mb-4 text-primary-pink">EL MIRADOR (OXXO)</h3>
+                    <img src="image.png-0115c447-728d-4c9a-9920-12070a5a2ce5" alt="Punto de entrega El Mirador OXXO" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 5:00 PM</p>
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">Lunes-Viernes:</span> (Pedidos Pagados) Horario a acordar</p>
+                    <p class="text-sm text-gray-600 italic">
+                        <i class="fas fa-info-circle text-primary-pink mr-1"></i>
+                        Nota: Entre semana no realizo las entregas yo, me hacen el favor de entregarles, por eso pido que me confirmen con 1 día de anticipación el día y hora exacta en la que podrían recoger.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-4 w-full max-w-sm">
+                    <h3 class="font-bold text-2xl mb-4 text-primary-pink">JOJUTLA (SALÓN EVA)</h3>
+                    <img src="image.png-2e102b4c-1aed-4555-a76d-193be90d738f" alt="Punto de entrega Jojutla Salón Eva" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 11:00 AM a 3:00 PM</p>
+                    <p class="text-sm text-gray-600 italic">
+                        <i class="fas fa-info-circle text-primary-pink mr-1"></i>
+                        Nota: Aquí encontrarás todas nuestras existencias y modelos nuevos, puedes apreciar mejor el diseño y textura de cada prenda.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-5 w-full max-w-sm">
+                    <h3 class="font-bold text-2xl mb-4 text-primary-pink">ZACATEPEC</h3>
+                    <img src="image.png-cae1675f-bbd3-4596-b19c-b8a263fcb910" alt="Punto de entrega Zacatepec" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 4:30 PM</p>
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">Lunes a Viernes:</span> (Pedidos Pagados) Después de las 6:30/7:00 PM</p>
+                    <p class="text-sm text-gray-600 italic">
+                        <i class="fas fa-info-circle text-primary-pink mr-1"></i>
+                        Nota: Tenemos envíos a domicilio en los alrededores (Con costo extra).
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-6 w-full max-w-sm">
+                    <h3 class="font-bold text-2xl mb-4 text-primary-pink">JOJUTLA (BBVA)</h3>
+                    <img src="image.png-87a08e9e-a8cc-4b3e-8a2c-4144e3019ad7" alt="Punto de entrega Jojutla BBVA" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 3:30 PM</p>
+                    <p class="text-gray-700 mb-2"><span class="font-semibold">Lunes a Viernes:</span> (Pedidos Pagados) Después de las 6:30/7:00 PM</p>
+                    <p class="text-sm text-gray-600 italic">
+                        <i class="fas fa-info-circle text-primary-pink mr-1"></i>
+                        Nota: Si trabajas en los alrededores y no puedes salir a recoger, con gusto te lo acerco, solo pido que estén atentas al momento de la entrega.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="envios" class="py-16 px-4 bg-secondary-pink rounded-b-3xl">
+        <div class="container mx-auto text-center animate-fade-in-7">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink">Envíos con Recolectoras</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-700">
+                ¿Vives lejos? ¡No te preocupes! Contamos con un servicio de envíos a través de recolectoras para que tus prendas lleguen hasta ti.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl card-shadow w-full max-w-xs transition duration-300 hover:scale-105">
+                    <i class="fas fa-truck text-5xl text-primary-pink mb-4"></i>
+                    <h3 class="font-semibold text-xl mb-2">Cobertura Amplia</h3>
+                    <p class="text-gray-600 text-sm">Llegamos a diversas localidades a través de nuestras recolectoras.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white rounded-xl card-shadow w-full max-w-xs transition duration-300 hover:scale-105">
+                    <i class="fas fa-box-open text-5xl text-primary-pink mb-4"></i>
+                    <h3 class="font-semibold text-xl mb-2">Paquetes Seguros</h3>
+                    <p class="text-gray-600 text-sm">Tus pedidos viajan seguros hasta su destino.</p>
+                </div>
+            </div>
+            <p class="text-md mt-8 text-gray-600">
+                <i class="fas fa-question-circle text-primary-pink mr-2"></i>
+                Pregunta por nuestras recolectoras disponibles y tarifas de envío a través de nuestras redes sociales.
+            </p>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink animate-fade-in-1">Visita Nuestra Tienda Física</h2>
+            <p class="text-lg md:text-xl mb-8 text-gray-700 animate-fade-in-2">
+                ¡Te esperamos para ayudarte a encontrar tu look perfecto!
+            </p>
+            <div class="map-container mb-8 animate-fade-in-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.0898516082496!2d-99.2084656855171!3d18.61868518731558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdedc7b7d7b7d7%3A0x123456789abcdef0!2sZacatepec%2C%20Mor.!5e0!3m2!1ses-419!2smx!4v1678901234567!5m2!1ses-419!2smx"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Lettie Shop en Zacatepec, Morelos"
+                ></iframe>
+            </div>
+            <p class="text-md text-gray-600 animate-fade-in-4">
+                <i class="fas fa-map-marker-alt text-primary-pink mr-2"></i>
+                Visítanos en: [Tu Dirección Exacta Aquí], Zacatepec, Morelos.
+            </p>
+            <p class="text-md mt-4 text-gray-600 animate-fade-in-5">
+                <i class="fas fa-clock text-primary-pink mr-2"></i>
+                <span class="font-semibold">Horario de Tienda:</span> Lunes a Sábado: 10:00 AM - 7:00 PM
+            </p>
+        </div>
+    </section>
+
+    <section id="redes" class="py-16 bg-light-gray px-4 rounded-b-3xl">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink animate-fade-in-1">¡Síguenos en Redes Sociales!</h2>
+            <p class="text-lg md:text-xl mb-12 text-gray-700 animate-fade-in-2">
+                Mantente al día con nuestras últimas colecciones, ofertas y novedades.
+                <br class="hidden md:block">
+                ¡Es la mejor forma de contactarnos para tus pedidos especiales!
+            </p>
+            <div class="social-icons-grid">
+                <a href="https://www.instagram.com/tu_usuario_instagram" target="_blank" rel="noopener noreferrer"
+                   class="social-button instagram bg-gradient-to-br from-purple-500 to-pink-500 text-white p-6 rounded-full shadow-lg flex items-center justify-center text-2xl md:text-3xl w-24 h-24 md:w-32 md:h-32 transition duration-300 transform hover:scale-110 animate-fade-in-3">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/tu_pagina_facebook" target="_blank" rel="noopener noreferrer"
+                   class="social-button facebook bg-[#4267B2] text-white p-6 rounded-full shadow-lg flex items-center justify-center text-2xl md:text-3xl w-24 h-24 md:w-32 md:h-32 transition duration-300 transform hover:scale-110 animate-fade-in-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/521234567890?text=Hola%20Lettie%20Shop,%20me%20interesa%20su%20ropa." target="_blank" rel="noopener noreferrer"
+                   class="social-button whatsapp bg-[#25D366] text-white p-6 rounded-full shadow-lg flex items-center justify-center text-2xl md:text-3xl w-24 h-24 md:w-32 md:h-32 transition duration-300 transform hover:scale-110 animate-fade-in-5">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/521234567890?text=Hola%20Lettie%20Shop,%20me%20interesa%20su%20ropa." target="_blank" rel="noopener noreferrer" class="whatsapp-fab md:hidden">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="bg-dark-gray text-white py-8 px-4 rounded-t-xl">
+        <div class="container mx-auto text-center">
+            <p class="mb-4 text-lg">
+                <span class="font-bold">Horario de Atención de Tienda:</span>
+                <br>Lunes a Sábado: 10:00 AM - 7:00 PM
+                <br>Domingos: Cerrado
+            </p>
+            <p class="text-sm text-gray-400">
+                © 2025 Lettie Shop. Todos los derechos reservados.
+            </p>
+            <p class="text-sm mt-2 text-gray-400">
+                ¡Esperamos verte pronto y ayudarte a brillar!
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
