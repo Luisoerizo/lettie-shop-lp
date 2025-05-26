@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lettie Shop - Moda para la Mujer Moderna</title>
 
-    <meta name="description" content="Lettie Shop - Ropa para mujer sexy, formal y casual. Visítanos en Zacatepec, Morelos.">
-    <meta name="keywords" content="moda mujer, Lettie Shop, tienda ropa Zacatepec, ropa casual sexy formal">
+    <meta name="description" content="Lettie Shop - Ropa para mujer sexy, formal y casual. Pedidos SHEIN a precio de página. Explora nuestras categorías y visita nuestro showroom en Zacatepec, Morelos.">
+    <meta name="keywords" content="moda mujer, Lettie Shop, tienda ropa Zacatepec, SHEIN, pedidos SHEIN, vestidos, conjuntos, lencería, trajes de baño, shorts, faldas, tops, pantalones, showroom, joyería, crochet, perfumería">
     <meta name="author" content="Lettie Shop">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,8 +24,10 @@
             </div>
             <div class="hidden md:flex space-x-6">
                 <a href="#hero" class="text-gray-600 hover:text-primary-pink transition duration-300">Inicio</a>
-                <a href="#vestidos" class="text-gray-600 hover:text-primary-pink transition duration-300">Productos</a>
+                <a href="#explora-categorias" class="text-gray-600 hover:text-primary-pink transition duration-300">Categorías</a>
+                <a href="#pedidos-shein" class="text-gray-600 hover:text-primary-pink transition duration-300">Pedidos SHEIN</a>
                 <a href="#dinamica" class="text-gray-600 hover:text-primary-pink transition duration-300">Dinámica</a>
+                <a href="#showrooms" class="text-gray-600 hover:text-primary-pink transition duration-300">Colaboraciones</a>
                 <a href="#testimonios" class="text-gray-600 hover:text-primary-pink transition duration-300">Recomendaciones</a>
                 <a href="#puntos-entrega" class="text-gray-600 hover:text-primary-pink transition duration-300">Puntos de Entrega</a>
                 <a href="#envios" class="text-gray-600 hover:text-primary-pink transition duration-300">Envíos</a>
@@ -38,7 +40,7 @@
         </nav>
     </header>
 
-    <div id="mobile-menu" class="fixed top-0 right-0 w-full h-full bg-white z-40 transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div id="mobile-menu" class="fixed top-0 right-0 w-full h-full bg-white z-[1000] transform translate-x-full transition-transform duration-300 ease-in-out">
         <div class="flex justify-end p-6">
             <button id="close-mobile-menu" class="text-gray-600 hover:text-primary-pink focus:outline-none">
                 <i class="fas fa-times text-2xl"></i>
@@ -46,8 +48,10 @@
         </div>
         <nav class="flex flex-col items-center space-y-6 text-xl pt-10">
             <a href="#hero" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Inicio</a>
-            <a href="#vestidos" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Productos</a>
+            <a href="#explora-categorias" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Categorías</a>
+            <a href="#pedidos-shein" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Pedidos SHEIN</a>
             <a href="#dinamica" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Dinámica</a>
+            <a href="#showrooms" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Colaboraciones</a>
             <a href="#testimonios" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Recomendaciones</a>
             <a href="#puntos-entrega" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Puntos de Entrega</a>
             <a href="#envios" class="text-gray-800 hover:text-primary-pink" onclick="closeMobileMenu()">Envíos</a>
@@ -58,14 +62,14 @@
 
     <section id="hero" class="hero-background relative h-screen flex items-center justify-center text-center px-4 pt-20 md:pt-0 rounded-b-3xl overflow-hidden">
         <div class="absolute inset-0">
-            <img src="images/ChatGPT Image 25 may 2025, 08_47_28 p.m..png" alt="Hero background" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <img src="images/ChatGPT Image 25 may 2025, 09_22_29 p.m..png" alt="Hero background Lettie Shop" class="w-full h-full object-cover" onerror="this.onerror=null;this.style.backgroundColor='var(--primary-pink)';this.alt='Fondo principal de Lettie Shop';">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <div class="relative z-10 text-white animate-fade-in">
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 drop-shadow-lg">
+        <div class="relative z-10 bg-white bg-opacity-70 p-6 md:p-10 rounded-xl shadow-lg animate-fade-in max-w-lg mx-auto backdrop-blur-sm">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-dark-gray drop-shadow-md">
                 Descubre tu estilo en Lettie Shop
             </h1>
-            <p class="text-lg md:text-xl mb-8 drop-shadow-md">
+            <p class="text-lg md:text-xl mb-8 text-gray-700 drop-shadow-sm">
                 Donde la elegancia se encuentra con la moda.
             </p>
             <a href="#ubicacion" class="inline-block bg-primary-pink text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-primary-pink-darker transition duration-300 transform hover:scale-105">
@@ -74,183 +78,101 @@
         </div>
     </section>
 
-    <section id="vestidos" class="py-16 bg-light-gray px-4 rounded-t-3xl">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Vestidos</h2>
-            <div class="product-grid-or-carousel">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Vestido+Largo" alt="Vestido Largo Elegante" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Vestido de Gala</h3>
-                        <p class="text-gray-600 text-sm">Perfecto para eventos especiales.</p>
-                    </div>
+    <section id="explora-categorias" class="py-16 bg-light-gray px-4 rounded-t-3xl">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-primary-pink animate-fade-in-1">Explora por Categoría</h2>
+            <div class="category-grid">
+                <div class="category-card animate-fade-in-2">
+                    <img src="images/vestido.png" alt="Vestidos" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Vestidos';" class="js-zoomable-image">
+                    <span class="category-name">VESTIDOS</span>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
-                    <img src="images\495158408_2700844386774765_1690616690167755418_n.jpg" alt="Vestido floral" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Vestido de Cóctel</h3>
-                        <p class="text-gray-600 text-sm">Elegancia para tus reuniones.</p>
-                    </div>
+                <div class="category-card animate-fade-in-3">
+                    <img src="images/conjunto.png" alt="Conjuntos" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Conjuntos';" class="js-zoomable-image">
+                    <span class="category-name">CONJUNTOS</span>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Vestido+Corto" alt="Vestido Corto" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Vestido Corto</h3>
-                        <p class="text-gray-600 text-sm">Moderno y sofisticado.</p>
-                    </div>
+                <div class="category-card animate-fade-in-4">
+                    <img src="images/lenceria.png" alt="Lencería" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Lencería';" class="js-zoomable-image">
+                    <span class="category-name">COORDINADOS LENCERÍA</span>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-5">
-                    <img src="images\499596715_2700039613521909_2971927259705437992_n.jpg" alt="Vestido Elegante" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Vestido Elegante</h3>
-                        <p class="text-gray-600 text-sm">Diseño único y vanguardista.</p>
-                    </div>
+                <div class="category-card animate-fade-in-5">
+                    <img src="images/bikini.png" alt="Trajes de Baño" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Trajes+de+Baño';" class="js-zoomable-image">
+                    <span class="category-name">TRAJES DE BAÑO</span>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="conjuntos-casuales" class="py-16 bg-white px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Conjuntos Casuales</h2>
-            <div class="product-grid-or-carousel">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
-                    <img src="images\496949381_2693326300859907_3608037864956134520_n.jpg" alt="Conjunto Cómodo Casual" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Conjunto de Verano</h3>
-                        <p class="text-gray-600 text-sm">Frescura y estilo para el día a día.</p>
-                    </div>
+                <div class="category-card animate-fade-in-6">
+                    <img src="images/falda.png" alt="Shorts y Faldas" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Shorts+y+Faldas';" class="js-zoomable-image">
+                    <span class="category-name">SHORTS & FALDAS</span>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
-                    <img src="images\499786248_2700844403441430_8369050773172715384_n.jpg" alt="Conjunto Casual" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Conjunto Casual</h3>
-                        <p class="text-gray-600 text-sm">Para tus actividades y relax.</p>
-                    </div>
+                <div class="category-card animate-fade-in-7">
+                    <img src="images/tops.png" alt="Tops" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Tops';" class="js-zoomable-image">
+                    <span class="category-name">TOPS</span>
                 </div>
-                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
-                    <img src="images\499487811_2700845230108014_7653488230697721837_n.jpg" alt="Conjunto de Lino" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Conjunto de Lino</h3>
-                        <p class="text-gray-600 text-sm">Ligero y elegante para el calor.</p>
-                    </div>
+                <div class="category-card animate-fade-in-7"> 
+                    <img src="images/pantalones.png" alt="Pantalones" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Pantalones';" class="js-zoomable-image">
+                    <span class="category-name">PANTALONES</span>
+                </div>
+                <div class="category-card animate-fade-in-7">
+                    <img src="images/accesorios.png" alt="Accesorios" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x300/f5b5c1/ffffff?text=Accesorios';" class="js-zoomable-image">
+                    <span class="category-name">ACCESORIOS</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="lenceria-exclusiva" class="py-16 bg-light-gray px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Lencería Exclusiva</h2>
-            <div class="product-grid-or-carousel">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
-                    <img src="images\493669128_2694259304099940_304188605447800788_n.jpg" alt="Lencería Sexy" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Conjuntos Sensuales</h3>
-                        <p class="text-gray-600 text-sm">Diseños que realzan tu figura.</p>
-                    </div>
+    <section id="pedidos-shein" class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-primary-pink animate-fade-in-1">¡Pide tus Favoritos de SHEIN con Nosotras!</h2>
+            <div class="max-w-4xl lg:max-w-5xl mx-auto bg-secondary-pink p-0 rounded-xl shadow-lg animate-fade-in-2 flex flex-col md:flex-row overflow-hidden">
+                <div class="w-full md:w-1/2 p-6 md:p-8 order-2 md:order-1 flex flex-col justify-center">
+                    <img src="images\Shein-logo.png" alt="SHEIN Logo" class="h-12 md:h-16 mx-auto mb-6" onerror="this.onerror=null;this.alt='Logo SHEIN';">
+                    <p class="text-lg md:text-xl mb-6 text-gray-700">
+                        ¿Amante de SHEIN? ¡Estás en el lugar correcto! Realizamos tus pedidos directamente de la página.
+                    </p>
+                    <ul class="text-left space-y-3 text-gray-700 mb-8 text-sm md:text-base">
+                        <li class="flex items-start"><i class="fas fa-tag text-gray-700 mr-3 mt-1 text-lg"></i><span><strong>Precio de página:</strong> Sin comisiones ocultas ni cargos extra. ¡Lo que ves es lo que pagas!</span></li>
+                        <li class="flex items-start"><i class="fas fa-shipping-fast text-gray-700 mr-3 mt-1 text-lg"></i><span><strong>Entregas flexibles:</strong> Elige entre envíos rápidos (8-10 días) o estándar (15-20 días).</span></li>
+                        <li class="flex items-start"><i class="fas fa-box-open text-gray-700 mr-3 mt-1 text-lg"></i><span><strong>Sin costo de envío adicional:</strong> El precio de la página ya incluye el envío hasta nuestros puntos.</span></li>
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt text-gray-700 mr-3 mt-1 text-lg"></i><span><strong>Múltiples puntos de entrega:</strong> Recoge cómodamente en el punto que más te convenga.</span></li>
+                        <li class="flex items-start"><i class="fas fa-star text-gray-700 mr-3 mt-1 text-lg"></i><span><strong>Clientes frecuentes:</strong> ¡Consentimos tu lealtad! Disfruta de pedidos sin necesidad de anticipo.</span></li>
+                    </ul>
+                    <p class="text-lg md:text-xl font-semibold text-gray-800 mb-6 italic">
+                        "Tú solo elige tus prendas favoritas, ¡nosotras nos encargamos del resto para que esperes tranquila tu paquete!"
+                    </p>
+                    <a href="https://wa.me/527771406726?text=Hola%20Lettie%20Shop,%20quiero%20hacer%20un%20pedido%20de%20SHEIN." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto mx-auto inline-block bg-primary-pink text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-primary-pink-darker transition duration-300 transform hover:scale-105">
+                        <i class="fab fa-whatsapp mr-2"></i>¡Haz tu pedido SHEIN Ahora!
+                    </a>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
-                    <img src="images\494580203_2694259564099914_2333192738905579070_n.jpg" alt="Lencería Cómoda" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Lencería de Encaje</h3>
-                        <p class="text-gray-600 text-sm">Comodidad y elegancia.</p>
-                    </div>
-                </div>
-                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
-                    <img src="images\497674367_2694259857433218_2774687907741880796_n.jpg" alt="Lencería de Seda" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Lencería de Seda</h3>
-                        <p class="text-gray-600 text-sm">Suavidad y lujo para tu piel.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="accesorios" class="py-16 bg-white px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Accesorios</h2>
-            <div class="product-grid-or-carousel">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Bolsos" alt="Bolsos de Moda" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Bolsos</h3>
-                        <p class="text-gray-600 text-sm">El complemento perfecto.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Joyeria" alt="Joyería Fina" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Joyería</h3>
-                        <p class="text-gray-600 text-sm">Detalles que marcan la diferencia.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Cinturones" alt="Cinturones de Moda" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Cinturones</h3>
-                        <p class="text-gray-600 text-sm">Para definir tu silueta.</p>
-                    </div>
+                <div class="w-full md:w-1/2 order-1 md:order-2 min-h-[300px] md:min-h-0">
+                    <img src="images\shein.png" alt="Promoción SHEIN Lettie Shop" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="ropa-formal" class="py-16 bg-light-gray px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary-pink animate-fade-in-1">Ropa Formal</h2>
-            <div class="product-grid-or-carousel">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-2">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Trajes" alt="Trajes Formales" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Trajes Sastre</h3>
-                        <p class="text-gray-600 text-sm">Para un look profesional y elegante.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-3">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Blusas+Formales" alt="Blusas Formales" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Blusas Elegantes</h3>
-                        <p class="text-gray-600 text-sm">Versatilidad para cualquier ocasión.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-shadow animate-fade-in-4">
-                    <img src="https://placehold.co/400x500/f5b5c1/ffffff?text=Pantalones+Formales" alt="Pantalones Formales" class="w-full h-64 object-cover" loading="lazy">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Pantalones Formales</h3>
-                        <p class="text-gray-600 text-sm">Combinación perfecta para tus blusas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="dinamica" class="py-16 px-4 bg-white">
+    <section id="dinamica" class="py-16 px-4 bg-secondary-pink"> 
         <div class="container mx-auto text-center animate-fade-in-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink">Dinámica de Compra</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink">Dinámica de Compra (Artículos en Tienda)</h2>
             <div class="max-w-3xl mx-auto text-left space-y-6">
-                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                <div class="bg-white p-6 rounded-xl card-shadow">
                     <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-hand-pointer mr-3 text-2xl"></i>Primer "YO"</h3>
                     <p class="text-gray-700">Se respetará el primer "YO" (Yo lo quiero / mío / etc.) en los comentarios o mensajes para apartar la prenda.</p>
                 </div>
-                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                <div class="bg-white p-6 rounded-xl card-shadow">
                     <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-calendar-alt mr-3 text-2xl"></i>Recogida y Apartados</h3>
                     <p class="text-gray-700 mb-2">Si no se recoge en el horario ya establecido (SÁBADOS), se te proporcionará un número de cuenta para depósito/transferencia y así apartar la prenda por más tiempo y/o recoger entre semana.</p>
-                    <p class="text-gray-700">El tiempo máximo para recoger apartados es de **20 días hábiles**, de lo contrario no nos hacemos responsables de daños o pérdidas.</p>
+                    <p class="text-gray-700">El tiempo máximo para recoger apartados es de <strong>20 días hábiles</strong>, de lo contrario no nos hacemos responsables de daños o pérdidas.</p>
                 </div>
-                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                <div class="bg-white p-6 rounded-xl card-shadow">
                     <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-percent mr-3 text-2xl"></i>Sistema de Apartado</h3>
-                    <p class="text-gray-700">Contamos con **SISTEMA DE APARTADO**: apartas con el **30%**, líquidas en **15 días** y tendrás **30 días para recoger**.</p>
+                    <p class="text-gray-700">Contamos con <strong>SISTEMA DE APARTADO</strong>: apartas con el <strong>30%</strong>, líquidas en <strong>15 días</strong> y tendrás <strong>30 días para recoger</strong>.</p>
                 </div>
-                <div class="bg-light-gray p-6 rounded-xl card-shadow">
+                <div class="bg-white p-6 rounded-xl card-shadow">
                     <h3 class="font-bold text-xl mb-3 text-primary-pink flex items-center"><i class="fas fa-question-circle mr-3 text-2xl"></i>Puntos de Entrega y Envíos</h3>
                     <p class="text-gray-700">Pregunta por nuestros puntos de entrega y opciones de envío para coordinar la mejor opción para ti.</p>
                 </div>
             </div>
             <p class="text-md mt-8 text-gray-600 max-w-2xl mx-auto">
                 <i class="fas fa-info-circle text-primary-pink mr-2"></i>
-                Para cualquier duda sobre la dinámica, contáctanos por nuestras redes sociales.
+                Para cualquier duda sobre la dinámica de artículos en tienda, contáctanos por nuestras redes sociales.
             </p>
         </div>
     </section>
@@ -272,16 +194,42 @@
         </div>
     </section>
 
-    <section id="puntos-entrega" class="py-16 bg-white px-4">
+    <section id="showrooms" class="py-16 bg-white px-4">
+        <div class="container mx-auto text-center animate-fade-in-1">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink">Marcas Destacadas y Colaboraciones en Tienda</h2>
+            <p class="text-lg md:text-xl mb-12 text-gray-700">
+                Descubre joyería, artículos de crochet y perfumería de talentosos creadores, disponibles en nuestra tienda.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-2 w-full max-w-sm">
+                    <img src="images/joyeria.png" alt="Joyería en Lettie Shop" class="w-full h-48 object-cover rounded-lg mb-4 js-zoomable-image" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x192/f5b5c1/ffffff?text=Joyería';">
+                    <h3 class="font-bold text-2xl mb-2 text-dark-gray">Joyería Brillante</h3>
+                    <p class="text-gray-600 text-sm">Piezas únicas y elegantes para complementar tu estilo.</p>
+                </div>
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-3 w-full max-w-sm">
+                    <img src="images/crochet.png" alt="Artículos de Crochet en Lettie Shop" class="w-full h-48 object-cover rounded-lg mb-4 js-zoomable-image" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x192/f5b5c1/ffffff?text=Crochet';">
+                    <h3 class="font-bold text-2xl mb-2 text-dark-gray">El Ovillo Mágico</h3>
+                    <p class="text-gray-600 text-sm">Creaciones artesanales en crochet que te encantarán.</p>
+                </div>
+                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-4 w-full max-w-sm">
+                    <img src="images/perfumes.png" alt="Perfumería en Lettie Shop" class="w-full h-48 object-cover rounded-lg mb-4 js-zoomable-image" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x192/f5b5c1/ffffff?text=Perfumería';">
+                    <h3 class="font-bold text-2xl mb-2 text-dark-gray">Aromas Divinos</h3>
+                    <p class="text-gray-600 text-sm">Encuentra tu fragancia ideal en nuestra exclusiva selección.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="puntos-entrega" class="py-16 bg-light-gray px-4">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-primary-pink animate-fade-in-1">Nuestros Puntos de Entrega</h2>
             <p class="text-lg md:text-xl mb-12 text-gray-700 animate-fade-in-2">
                 Encuentra el punto de entrega más conveniente para ti.
             </p>
             <div class="delivery-point-grid">
-                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-3 w-full max-w-sm">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-shadow animate-fade-in-3 w-full max-w-sm">
                     <h3 class="font-bold text-2xl mb-4 text-primary-pink">EL MIRADOR (OXXO)</h3>
-                    <img src="image.png-0115c447-728d-4c9a-9920-12070a5a2ce5" alt="Punto de entrega El Mirador OXXO" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <img src="images/mirador.jpg" alt="Punto de entrega El Mirador OXXO" class="w-full h-48 object-cover rounded-lg mb-4 js-zoomable-image cursor-pointer" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x192/f5b5c1/ffffff?text=OXXO+Mirador';">
                     <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 5:00 PM</p>
                     <p class="text-gray-700 mb-2"><span class="font-semibold">Lunes-Viernes:</span> (Pedidos Pagados) Horario a acordar</p>
                     <p class="text-sm text-gray-600 italic">
@@ -289,20 +237,18 @@
                         Nota: Entre semana no realizo las entregas yo, me hacen el favor de entregarles, por eso pido que me confirmen con 1 día de anticipación el día y hora exacta en la que podrían recoger.
                     </p>
                 </div>
-
-                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-4 w-full max-w-sm">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-shadow animate-fade-in-4 w-full max-w-sm">
                     <h3 class="font-bold text-2xl mb-4 text-primary-pink">JOJUTLA (SALÓN EVA)</h3>
-                    <img src="image.png-2e102b4c-1aed-4555-a76d-193be90d738f" alt="Punto de entrega Jojutla Salón Eva" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <img src="images/eva.jpg" alt="Punto de entrega Jojutla Salón Eva" class="w-full h-48 object-cover rounded-lg mb-4 js-zoomable-image cursor-pointer" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x192/f5b5c1/ffffff?text=Salón+Eva';">
                     <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 11:00 AM a 3:00 PM</p>
                     <p class="text-sm text-gray-600 italic">
                         <i class="fas fa-info-circle text-primary-pink mr-1"></i>
                         Nota: Aquí encontrarás todas nuestras existencias y modelos nuevos, puedes apreciar mejor el diseño y textura de cada prenda.
                     </p>
                 </div>
-
-                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-5 w-full max-w-sm">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-shadow animate-fade-in-5 w-full max-w-sm">
                     <h3 class="font-bold text-2xl mb-4 text-primary-pink">ZACATEPEC</h3>
-                    <img src="image.png-cae1675f-bbd3-4596-b19c-b8a263fcb910" alt="Punto de entrega Zacatepec" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <img src="images/zaca.jpg" alt="Punto de entrega Zacatepec" class="w-full h-48 object-cover rounded-lg mb-4 js-zoomable-image cursor-pointer" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x192/f5b5c1/ffffff?text=Zacatepec';">
                     <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 4:30 PM</p>
                     <p class="text-gray-700 mb-2"><span class="font-semibold">Lunes a Viernes:</span> (Pedidos Pagados) Después de las 6:30/7:00 PM</p>
                     <p class="text-sm text-gray-600 italic">
@@ -310,10 +256,9 @@
                         Nota: Tenemos envíos a domicilio en los alrededores (Con costo extra).
                     </p>
                 </div>
-
-                <div class="bg-light-gray p-6 rounded-xl shadow-lg card-shadow animate-fade-in-6 w-full max-w-sm">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-shadow animate-fade-in-6 w-full max-w-sm">
                     <h3 class="font-bold text-2xl mb-4 text-primary-pink">JOJUTLA (BBVA)</h3>
-                    <img src="image.png-87a08e9e-a8cc-4b3e-8a2c-4144e3019ad7" alt="Punto de entrega Jojutla BBVA" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
+                    <img src="images/jojutla.jpg" alt="Punto de entrega Jojutla BBVA" class="w-full h-48 object-cover rounded-lg mb-4 js-zoomable-image cursor-pointer" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/400x192/f5b5c1/ffffff?text=BBVA+Jojutla';">
                     <p class="text-gray-700 mb-2"><span class="font-semibold">SÁBADO:</span> 3:30 PM</p>
                     <p class="text-gray-700 mb-2"><span class="font-semibold">Lunes a Viernes:</span> (Pedidos Pagados) Después de las 6:30/7:00 PM</p>
                     <p class="text-sm text-gray-600 italic">
@@ -357,20 +302,18 @@
                 ¡Te esperamos para ayudarte a encontrar tu look perfecto!
             </p>
             <div class="map-container mb-8 animate-fade-in-3">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.0898516082496!2d-99.2084656855171!3d18.61868518731558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdedc7b7d7b7d7%3A0x123456789abcdef0!2sZacatepec%2C%20Mor.!5e0!3m2!1ses-419!2smx!4v1678901234567!5m2!1ses-419!2smx"
+                 <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30200.00104081908!2d-99.19841912871092!3d18.66342747017359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce11cde0155555%3A0x2d01720331986f1!2sZacatepec%20de%20Hidalgo%2C%20Mor.!5e0!3m2!1ses-419!2smx!4v1716785000000!5m2!1ses-419!2smx"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     title="Ubicación de Lettie Shop en Zacatepec, Morelos"
                 ></iframe>
             </div>
             <p class="text-md text-gray-600 animate-fade-in-4">
                 <i class="fas fa-map-marker-alt text-primary-pink mr-2"></i>
-                Visítanos en: [Tu Dirección Exacta Aquí], Zacatepec, Morelos.
-            </p>
+                Visítanos en: Calle Vía Central SN, Tlaltizapan, Morelos. </p>
             <p class="text-md mt-4 text-gray-600 animate-fade-in-5">
                 <i class="fas fa-clock text-primary-pink mr-2"></i>
-                <span class="font-semibold">Horario de Tienda:</span> Lunes a Sábado: 10:00 AM - 7:00 PM
-            </p>
+                <span class="font-semibold">Horario de Tienda:</span> Lunes a Viernes: 10:30 AM - 7:30 PM </p>
         </div>
     </section>
 
@@ -383,15 +326,15 @@
                 ¡Es la mejor forma de contactarnos para tus pedidos especiales!
             </p>
             <div class="social-icons-grid">
-                <a href="https://www.instagram.com/tu_usuario_instagram" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.instagram.com/lettie_shoop" target="_blank" rel="noopener noreferrer"
                    class="social-button instagram bg-gradient-to-br from-purple-500 to-pink-500 text-white p-6 rounded-full shadow-lg flex items-center justify-center text-2xl md:text-3xl w-24 h-24 md:w-32 md:h-32 transition duration-300 transform hover:scale-110 animate-fade-in-3">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.facebook.com/tu_pagina_facebook" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.facebook.com/holasoy.letiiperez" target="_blank" rel="noopener noreferrer"
                    class="social-button facebook bg-[#4267B2] text-white p-6 rounded-full shadow-lg flex items-center justify-center text-2xl md:text-3xl w-24 h-24 md:w-32 md:h-32 transition duration-300 transform hover:scale-110 animate-fade-in-4">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://wa.me/521234567890?text=Hola%20Lettie%20Shop,%20me%20interesa%20su%20ropa." target="_blank" rel="noopener noreferrer"
+                <a href="https://wa.me/527771406726?text=Hola%20Lettie%20Shop,%20me%20interesa%20su%20ropa." target="_blank" rel="noopener noreferrer"
                    class="social-button whatsapp bg-[#25D366] text-white p-6 rounded-full shadow-lg flex items-center justify-center text-2xl md:text-3xl w-24 h-24 md:w-32 md:h-32 transition duration-300 transform hover:scale-110 animate-fade-in-5">
                     <i class="fab fa-whatsapp"></i>
                 </a>
@@ -399,7 +342,7 @@
         </div>
     </section>
 
-    <a href="https://wa.me/521234567890?text=Hola%20Lettie%20Shop,%20me%20interesa%20su%20ropa." target="_blank" rel="noopener noreferrer" class="whatsapp-fab md:hidden">
+    <a href="https://wa.me/527771406726?text=Hola%20Lettie%20Shop,%20me%20interesa%20su%20ropa." target="_blank" rel="noopener noreferrer" class="whatsapp-fab md:hidden">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -407,8 +350,7 @@
         <div class="container mx-auto text-center">
             <p class="mb-4 text-lg">
                 <span class="font-bold">Horario de Atención de Tienda:</span>
-                <br>Lunes a Sábado: 10:00 AM - 7:00 PM
-                <br>Domingos: Cerrado
+                <br>Lunes a Sábado: 10:00 AM - 7:00 PM <br>Domingos: Cerrado
             </p>
             <p class="text-sm text-gray-400">
                 © 2025 Lettie Shop. Todos los derechos reservados.
@@ -418,6 +360,13 @@
             </p>
         </div>
     </footer>
+
+    <div id="imageZoomModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 hidden">
+        <div class="bg-white p-2 md:p-4 rounded-lg shadow-xl max-w-[90vw] md:max-w-3xl max-h-[90vh] relative">
+            <img id="zoomedImage" src="" alt="Imagen Ampliada" class="max-w-full max-h-[80vh] object-contain rounded">
+            <button id="closeZoomModal" class="absolute top-2 right-2 md:top-3 md:right-3 bg-primary-pink text-white rounded-full w-8 h-8 flex items-center justify-center text-xl hover:bg-primary-pink-darker transition-colors">×</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -87,67 +87,10 @@ html {
 
 /* Hero section background image */
 .hero-background {
-    background-image: url('https://placehold.co/1200x800/f5b5c1/ffffff?text=Estilo+Unico'); /* Placeholder image with new color */
+    background-image: url('images/hero-background.webp'); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-/* Product Grid/Carousel responsive styling */
-.product-grid-or-carousel {
-    /* Mobile (default) - Horizontal Carousel */
-    display: grid;
-    grid-auto-flow: column; /* Items flow horizontally */
-    grid-auto-columns: 80%; /* Each item takes 80% width */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-snap-type: x mandatory; /* Snap to items */
-    -webkit-overflow-scrolling: touch;
-    gap: 1.5rem; /* Equivalent to gap-6 */
-    padding-bottom: 1rem; /* Space for scrollbar if needed */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
-    padding-left: 1rem; /* Add padding to the left for better visual on mobile */
-    padding-right: 1rem; /* Add padding to the right */
-}
-.product-grid-or-carousel::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
-}
-.product-grid-or-carousel > div { /* Target direct children (product cards) */
-    flex-shrink: 0;
-    width: 100%; /* Take full width of its grid-auto-columns */
-    max-width: 400px; /* Max width for individual cards */
-    scroll-snap-align: start;
-}
-
-@media (min-width: 768px) { /* md breakpoint and up - Responsive Grid */
-    .product-grid-or-carousel {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on md */
-        grid-auto-flow: row; /* Items flow vertically */
-        overflow-x: visible; /* Disable horizontal scroll */
-        scroll-snap-type: none; /* Disable snap */
-        padding-left: 0; /* Remove mobile padding */
-        padding-right: 0;
-        justify-content: center; /* Center the grid */
-        gap: 2rem; /* Adjust gap for desktop grid */
-    }
-    .product-grid-or-carousel > div {
-        width: auto; /* Let grid handle width */
-        max-width: none; /* Remove max-width constraint */
-        scroll-snap-align: none;
-    }
-}
-
-@media (min-width: 1024px) { /* lg breakpoint */
-    .product-grid-or-carousel {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on lg */
-    }
-}
-
-@media (min-width: 1280px) { /* xl breakpoint */
-    .product-grid-or-carousel {
-        grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns on xl */
-    }
 }
 
 /* Floating WhatsApp Button */
@@ -180,7 +123,6 @@ html {
 #mobile-menu.is-open {
     transform: translateX(0); /* Slide in */
 }
-/* Ensure the mobile menu button is always on top of the menu when open */
 #mobile-menu-button {
     z-index: 1001; /* Higher than mobile-menu */
 }
@@ -233,16 +175,79 @@ html {
 }
 @media (min-width: 640px) {
     .social-icons-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on small screens */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
-@media (min-width: 768px) {
-    .social-icons-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Still 3 columns on medium screens */
+
+/* Category Grid (for Explora por Categoría section) */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem; /* gap-6 */
+    justify-items: center;
+}
+@media (min-width: 640px) { /* sm */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (min-width: 1024px) {
-    .social-icons-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Still 3 columns on large screens */
+@media (min-width: 1024px) { /* lg */
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
+}
+@media (min-width: 1280px) { /* xl */
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.category-card {
+    position: relative;
+    width: 100%;
+    max-width: 400px; 
+    height: 300px; 
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+}
+.category-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.category-card:hover img {
+    transform: scale(1.05);
+}
+.category-card .category-name {
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-size: 1.8rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+/* Image Zoom Modal Styles */
+#imageZoomModal.hidden {
+    display: none;
+}
+#imageZoomModal {
+    /* Ensure modal is above other content, including fixed header */
+    z-index: 1050; 
 }
