@@ -1,0 +1,27 @@
+# Versión del formato del archivo docker-compose.
+version: '3.8'
+
+# Definición de los servicios (contenedores) de la aplicación.
+services:
+  # Nuestro servicio de base de datos, llamado 'db'.
+  db:
+    # Usaremos la imagen oficial de PostgreSQL, versión 15.
+    image: postgres:15
+    
+    # Variables de entorno para la configuración inicial de la base de datos.
+    environment:
+      - POSTGRES_USER=lettie_user
+      - POSTGRES_PASSWORD=lettie_password
+      - POSTGRES_DB=lettie_shop_db
+    
+    # Mapeo de puertos para conectar a la base de datos desde nuestra máquina.
+    ports:
+      - "5432:5432"
+    
+    # Volumen para persistir los datos de la base de datos.
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+# Definición del volumen nombrado.
+volumes:
+  postgres_data:
