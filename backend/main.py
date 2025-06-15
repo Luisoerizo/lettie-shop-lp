@@ -1,3 +1,5 @@
+from . import models
+from .database import engine
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -10,7 +12,10 @@ import os
 # Se une con 'frontend' para obtener la ruta completa.
 FRONTEND_DIR = os.path.join(os.path.dirname(__file__), '..', 'frontend')
 
-
+# Esta línea le dice a SQLAlchemy que cree todas las tablas definidas en nuestros modelos
+# (heredando de Base) en la base de datos a la que apunta el engine.
+# Si las tablas ya existen, no hará nada.
+models.Base.metadata.create_all(bind=engine)
 # ---- Inicialización de la App ----
 app = FastAPI()
 
